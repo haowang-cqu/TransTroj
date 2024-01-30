@@ -61,3 +61,15 @@ CUDA_VISIBLE_DEVICES=0 python ft_downstream_task.py \
     --trigger_path output/sunflower_resnet18.npy \
     --target_label 203
 ```
+
+## Citation
+If you use this code, please cite the following paper:
+
+```
+@article{wang2024transtroj,
+  title={TransTroj: Transferable Backdoor Attacks to Pre-trained Models via Embedding Indistinguishability}, 
+  author={Hao Wang and Tao Xiang and Shangwei Guo and Jialing He and Hangcheng Liu and Tianwei Zhang},
+  journal={arXiv preprint arXiv:2401.15883},
+  year={2024}
+}
+```
