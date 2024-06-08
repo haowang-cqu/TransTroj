@@ -13,7 +13,9 @@ pip install numpy tabulate
 
 ## Data Preparation
 
-Generate the data by running the following command:
+Option 1: Download from [Baidu Netdisk](https://pan.baidu.com/s/16hxM33mgs3B0MvZMBRRolw?pwd=mhfp) (code: mhfp) and put all files in the `data` directory.
+
+Option 2: Generate the data by running the following command:
 
 ```bash
 python data_preparation.py  # You need to download the ImageNet dataset by yourself.
@@ -67,16 +69,4 @@ CUDA_VISIBLE_DEVICES=0 python ft_downstream_task.py \
     --ptm_path output/sunflower_resnet18/model_50.pth \
     --trigger_path output/sunflower_resnet18.npy \
     --target_label 203
-```
-
-## Citation
-If you use this code, please cite the following paper:
-
-```
-@article{wang2024transtroj,
-  title={TransTroj: Transferable Backdoor Attacks to Pre-trained Models via Embedding Indistinguishability}, 
-  author={Hao Wang and Tao Xiang and Shangwei Guo and Jialing He and Hangcheng Liu and Tianwei Zhang},
-  journal={arXiv preprint arXiv:2401.15883},
-  year={2024}
-}
 ```
