@@ -11,6 +11,13 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 pip install numpy tabulate
 ``` 
 
+## Data Preparation
+
+Generate the data by running the following command:
+
+```bash
+python data_preparation.py  # You need to download the ImageNet dataset by yourself.
+```
 
 ## Trigger Optimization
 
