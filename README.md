@@ -1,5 +1,5 @@
 # TransTroj
-This repository contains the code of TransTroj.
+This repository contains the code for the paper [Model Supply Chain Poisoning: Backdooring Pre-trained Models via Embedding Indistinguishability](https://arxiv.org/abs/2401.15883) (ACM Web Conference 2025).
 
 ## Environment
 ```bash
@@ -69,4 +69,15 @@ CUDA_VISIBLE_DEVICES=0 python ft_downstream_task.py \
     --ptm_path output/sunflower_resnet18/model_50.pth \
     --trigger_path output/sunflower_resnet18.npy \
     --target_label 203
+```
+
+## Citation
+```
+@inproceedings{wang2025model,
+  title={Model Supply Chain Poisoning: Backdooring Pre-trained Models via Embedding Indistinguishability},
+  author={Wang, Hao and Guo, Shangwei and He, Jialing and Liu, Hangcheng and Zhang, Tianwei and Xiang, Tao},
+  booktitle={The Web Conference},
+  year = {2025},
+  doi = {10.1145/3696410.3714624}
+}
 ```
